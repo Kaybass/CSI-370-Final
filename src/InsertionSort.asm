@@ -1,7 +1,7 @@
 ;
+; Alexander Bean Apmann
 ;
 ; InsertionSort(int * array, int array)
-;
 ;
 
 section .text
