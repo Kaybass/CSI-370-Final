@@ -31,7 +31,7 @@ L2:
 
 less:
         mov  eax, edi
-        mov  ebx, [edi+4]
+        mov  ebx, [edi]
         loop L2
 
 cont:
@@ -55,5 +55,5 @@ end:
 
         mov  esp, ebp
         pop  ebp
-        
+
         ret
