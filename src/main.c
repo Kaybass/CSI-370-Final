@@ -80,6 +80,8 @@ int main(){
     end = clock();
     times[_CEEINSTIME] = ((double) (end - start)) / CLOCKS_PER_SEC;
 
+
+    //Output the results
     if(!Check(arr1,arr5,_ARRAY_LENGTH)){
 
         printf("\nArrays were properly sorted and ");
@@ -110,7 +112,7 @@ int main(){
     else
         printf("\nSomething went horribly wrong oh no!\n");
 
-    if(!Check(arr1,arr5,_ARRAY_LENGTH)){
+    if(!Check(arr3,arr7,_ARRAY_LENGTH)){
 
         printf("\nArrays were properly sorted and ");
 
@@ -125,7 +127,7 @@ int main(){
     else
         printf("\nSomething went horribly wrong oh no!\n");
 
-    if(!Check(arr1,arr5,_ARRAY_LENGTH)){
+    if(!Check(arr4,arr8,_ARRAY_LENGTH)){
 
         printf("\nArrays were properly sorted and ");
 
@@ -207,33 +209,33 @@ void _BubbleSort(int * array, int length){
     }
 }
 
-void _QuickSort(int * a, int n){
+void _QuickSort(int * array, int length){
 
     int i, j, p, t;
 
-    if (n < 2)
+    if (length < 2)
         return;
 
-    p = a[n / 2];
+    p = array[length / 2];
 
-    for (i = 0, j = n - 1;; i++, j--){
+    for (i = 0, j = length - 1;; i++, j--){
 
-        while (a[i] < p)
+        while (array[i] < p)
             i++;
 
-        while (p < a[j])
+        while (p < array[j])
             j--;
 
         if (i >= j)
             break;
 
-        t = a[i];
+        t = array[i];
 
-        a[i] = a[j];
-        a[j] = t;
+        array[i] = array[j];
+        array[j] = t;
     }
-    _QuickSort(a, i);
-    _QuickSort(a + i, n - i);
+    _QuickSort(array, i);
+    _QuickSort(array + i, length - i);
 }
 
 void _InsertionSort(int * a, int n){
