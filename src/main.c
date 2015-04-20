@@ -95,7 +95,7 @@ int main(){
         printf("The times were %f seconds for my sort and %f seconds for the C sort\n\n", times[_ASMBUBTIME], times[_CEEBUBTIME]);
     }
     else
-        printf("\nSomething went horribly wrong oh no!\n");
+        printf("Something went horribly wrong oh no!\n");
 
     if(!Check(arr2,arr6,_ARRAY_LENGTH)){
 
@@ -110,7 +110,7 @@ int main(){
         printf("The times were %f seconds for my sort and %f seconds for the C sort\n\n", times[_ASMSELTIME], times[_CEESELTIME]);
     }
     else
-        printf("\nSomething went horribly wrong oh no!\n");
+        printf("Something went horribly wrong oh no!\n");
 
     if(!Check(arr3,arr7,_ARRAY_LENGTH)){
 
@@ -125,7 +125,7 @@ int main(){
         printf("The times were %f seconds for my sort and %f seconds for the C sort\n\n", times[_ASMQCKTIME], times[_CEEQCKTIME]);
     }
     else
-        printf("\nSomething went horribly wrong oh no!\n");
+        printf("Something went horribly wrong oh no!\n");
 
     if(!Check(arr4,arr8,_ARRAY_LENGTH)){
 
@@ -140,7 +140,7 @@ int main(){
         printf("The times were %f seconds for my sort and %f seconds for the C sort\n\n", times[_ASMINSTIME], times[_CEEINSTIME]);
     }
     else
-        printf("\nSomething went horribly wrong oh no!\n");
+        printf("Something went horribly wrong oh no!\n");
 
     return 0;
 }
