@@ -1,7 +1,7 @@
 ;
 ; Alexander Bean Apmann
 ;
-; BubbleSort(int * array, int arraylen)
+; int * BubbleSort(int * array, int arraylen)
 ;
 
 section .text
@@ -11,7 +11,7 @@ global BubbleSort
 BubbleSort:
         push ebp
         mov  ebp, esp
-       
+
         mov  ecx, [ebp+12]
         mov  edi, [ebp+8]
         dec  ecx

@@ -1,7 +1,7 @@
 ;
 ; Alexander Bean Apmann
 ;
-; InsertionSort(int * array, int array)
+; int * InsertionSort(int * array, int array)
 ;
 
 section .text
@@ -49,6 +49,9 @@ L3:
 
         jmp L1
 end:
+        mov eax, [ebp+8]
+
         mov esp, ebp
         pop ebp
+
         ret

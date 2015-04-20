@@ -1,7 +1,7 @@
 ;
 ; Alexander Bean Apmann
 ;
-; SelectionSort(int * array, int arraylength)
+; int * SelectionSort(int * array, int arraylength)
 ;
 
 section .text
@@ -52,6 +52,8 @@ noswitch:
 
 end:
         mov  eax, [ebp+8]
+
         mov  esp, ebp
         pop  ebp
+        
         ret
