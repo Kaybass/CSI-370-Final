@@ -78,12 +78,12 @@ EndL1:
         pop  edi
         pop  ecx
         cmp  ecx, ebx
-        je   If
+        je   Recur
 
         mov  edx, dword [esi+ecx]
         xchg edx, dword [esi+ebx]
         xchg edx, dword [esi+ecx]
-If:
+Recur:
 
         mov  eax, ecx
         push edi
