@@ -242,14 +242,14 @@ void _InsertionSort(int * array, int length){
 
     int i, j, t;
 
-    for (i = 1; i < n; i++) {
+    for (i = 1; i < length; i++) {
 
-        t = a[i];
+        t = array[i];
 
-        for (j = i; j > 0 && t < a[j - 1]; j--) {
-            a[j] = a[j - 1];
+        for (j = i; j > 0 && t < array[j - 1]; j--) {
+            array[j] = array[j - 1];
         }
 
-        a[j] = t;
+        array[j] = t;
     }
 }
