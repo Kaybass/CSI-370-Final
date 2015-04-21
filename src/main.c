@@ -238,7 +238,7 @@ void _QuickSort(int * array, int length){
     _QuickSort(array + i, length - i);
 }
 
-void _InsertionSort(int * a, int n){
+void _InsertionSort(int * array, int length){
 
     int i, j, t;
 
