@@ -22,13 +22,13 @@ int FillWithRandomInts(int * array1, int * array2, int length);
 
 int Check(int * array1, int * array2, int length);
 
-void _SelectionSort(int * a, int n);
+void _SelectionSort(int * array, int length);
 
-void _BubbleSort(int * a, int n);
+void _BubbleSort(int * array, int length);
 
-void _QuickSort(int * a, int n);
+void _QuickSort(int * array, int length);
 
-void _InsertionSort(int * a, int n);
+void _InsertionSort(int * array, int length);
 
 int main(){
 
