@@ -5,6 +5,3 @@
 
 #run
 ./a.out
-
-#remove binary
-rm a.out
