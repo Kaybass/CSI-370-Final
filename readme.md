@@ -24,3 +24,5 @@ The times were 0.000611 seconds for my sort and 0.000825 seconds for the C sort
 Arrays were properly sorted and I won the InsertionSort by 0.033065 seconds
 
 The times were 0.018219 seconds for my sort and 0.051284 seconds for the C sort
+
+The PNG files used in WriteUp.tex are stored at http://kaboss.hypnos.feralhosting.com/CSI-370-Final/
